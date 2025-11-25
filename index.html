@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeAcademy</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  />
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div id="header-bar" class="header d-flex justify-content-between align-items-center px-4 py-2">
+      <a href="#/" class="text-decoration-none">
+        <img src="img/logo_amarillo_sin_fondo.png" alt="Logo" class="logo">
+      </a>
+
+      <nav>
+        <ul class="d-flex list-unstyled m-0">
+          <li class="mx-3"><a href="#/projects" class="nav-link">Proyectos</a></li>
+          <li class="mx-3"><a href="#/ourclients" class="nav-link">Nuestros clientes</a></li>
+          <li class="mx-3"><a href="#/contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+      <hr>
+    </div>
+  </header>
+
+  <!-- Contenedor SPA -->
+  <div id="app" class="container mt-4 pt-4">
+    <!-- Aquí se cargarán las vistas -->
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+
+        <!-- Columna 1: Redes sociales -->
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>SÍGUENOS EN:</h5>
+          <a href="https://www.tiktok.com/@electrodca" target="_blank" rel="noopener noreferrer">
+            <img src="img/tik-tok.png" alt="TikTok" class="footer-icon">
+          </a>
+          <a href="https://www.instagram.com/electro_dca/" target="_blank" rel="noopener noreferrer">
+            <img src="img/instagram.png" alt="Instagram" class="footer-icon">
+          </a>
+        </div>
+
+        <!-- Columna 2: Ayuda -->
+        <div class="col-md-4 mb-3 mb-md-0">
+          <h5>AYUDA</h5>
+          <ul class="list-unstyled">
+            <li><a href="#/contacto" class="footer-link">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Columna 3: Servicios / Avisos legales -->
+        <div class="col-md-4">
+          <h5>Servicios</h5>
+          <ul class="list-unstyled">
+            <li><a href="#/aviso-legal" class="footer-link">Aviso Legal</a></li>
+            <li><a href="#/politica-privacidad" class="footer-link">Política de Privacidad</a></li>
+            <li><a href="#/cookies" class="footer-link">Política de Cookies</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container text-center mt-3">
+      <p>&copy; 2025 Empresa Eléctrica. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Router SPA -->
+  <script>
+    function router() {
+      const ruta = window.location.hash;
+
+      if (ruta === "#/contacto") {
+        cargarVista("contacto.html");
+      } else if (ruta === "#/projects") {
+        cargarVista("projects.html");
+      } else if (ruta === "#/ourclients") {
+        cargarVista("ourclients.html");
+      } else {
+        cargarInicio();
+      }
+    }
+
+    function cargarVista(vista) {
+      fetch(vista)
+        .then(res => res.text())
+        .then(html => {
+          document.getElementById("app").innerHTML = html;
+        })
+        .catch(err => {
+          document.getElementById("app").innerHTML = "<p>Error al cargar la vista.</p>";
+        });
+    }
+
+    function cargarInicio() {
+      document.getElementById("app").innerHTML = `
+        <h2 class="text-center">Bienvenido a la SPA</h2>
+        <p class="text-center mt-3">Navega por el menú para ver las distintas páginas.</p>
+      `;
+    }
+
+    window.addEventListener("hashchange", router);
+    window.addEventListener("load", router);
+  </script>
+
+</body>
+</html>

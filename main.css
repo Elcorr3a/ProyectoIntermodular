@@ -1,0 +1,124 @@
+/* ------------------- */
+/* General y body      */
+/* ------------------- */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(37,37,37);
+    font-family: 'Arial', sans-serif;
+}
+
+/* ------------------- */
+/* Header              */
+/* ------------------- */
+.header {
+    background-color: #000;
+    padding: 10px 20px;
+       border-bottom: 2px solid #FFD700;
+}
+
+.header .logo {
+    width: 80px;
+}
+
+.header .nav-link {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.header .nav-link:hover {
+    text-decoration: underline;
+}
+hr{
+    color: #FFD700;
+}
+
+/* ------------------- */
+/* Contenedor SPA       */
+/* ------------------- */
+#app {
+    flex: 1; /* Ocupa todo el espacio disponible */
+}
+
+/* ------------------- */
+/* Footer              */
+/* ------------------- */
+footer {
+    background-color: #252525;
+    color: #fff;
+    flex-shrink: 0;
+    padding: 20px 0;
+}
+
+footer h5 {
+    color: #FFD700;
+    margin-bottom: 10px;
+}
+
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-icon {
+    width: 40px;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+}
+
+/* ------------------- */
+/* Contacto (tarjetas) */
+/* ------------------- */
+.contacto-container {
+    margin-top: 150px;
+}
+
+.contacto-title {
+    color: #FFD700;
+    margin-bottom: 30px;
+}
+
+.contacto-card {
+    background-color: #2C2C2C;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    text-align: center;
+    padding: 20px;
+}
+
+.contacto-icon, .contacto-social {
+    width: 50px;
+    transition: transform 0.3s;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.contacto-icon:hover, .contacto-social:hover {
+    transform: scale(1.2);
+}
+
+.contacto-text {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+.contacto-horario {
+    color: #CCCCCC;
+    font-size: 1rem;
+    text-align: center;
+}
