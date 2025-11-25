@@ -1,0 +1,56 @@
+/* Fondo general */
+body {
+    background-color: black;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor principal */
+.contacto-container {
+    margin-top: 150px;
+}
+
+/* Título */
+.contacto-title {
+    color: #FFD700;
+}
+
+/* Tarjetas */
+.contacto-card {
+    background-color: #2C2C2C;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Iconos de las tarjetas */
+.contacto-icon {
+    width: 50px;
+    transition: transform 0.3s;
+}
+
+.contacto-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Texto de las tarjetas */
+.contacto-text {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Iconos sociales */
+.contacto-social {
+    width: 45px;
+    transition: transform 0.3s;
+}
+
+.contacto-social:hover {
+    transform: scale(1.2);
+}
+
+/* Horario */
+.contacto-horario {
+    color: #CCCCCC;
+    font-size: 1rem;
+}
