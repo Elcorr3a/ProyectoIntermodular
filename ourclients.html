@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrusel de Clientes</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <style>
+    .card {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<section id="clients-section">
+  <h2 class="section-title">Nuestros Clientes</h2>
+  <p class="section-description">
+    Nos enorgullece trabajar con clientes que confían en nosotros. 
+    Aquí compartimos algunas de sus opiniones sobre nuestros servicios.
+  </p>
+  <div class="carousel-container">
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper" id="carousel-wrapper">
+        <!-- Los slides se generarán aquí dinámicamente -->
+      </div>
+      <div class="swiper-button-next">→</div>
+      <div class="swiper-button-prev">←</div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="carousel.js"></script>
+</body>
+</html>

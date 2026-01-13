@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Curso de HTML y CSS",
+    "description": "Aprende a construir páginas web profesionales desde cero utilizando HTML5 y CSS3. En este curso descubrirás cómo estructurar contenido, aplicar estilos modernos, trabajar con diseños responsivos y crear interfaces visuales atractivas que funcionen en cualquier dispositivo. Ideal para quienes quieren empezar en el mundo del desarrollo web.",
+    "hours": "30 horas",
+    "image": "img/html_course.avif"
+  },
+  {
+    "title": "Curso de JavaScript Avanzado",
+    "description": "Profundiza en el lenguaje JavaScript para dominar la programación moderna en la web. Aprenderás asincronía con Promises y async/await, manipulación avanzada del DOM, consumo de APIs, programación funcional y patrones de diseño aplicados en JavaScript. Este curso te prepara para crear aplicaciones dinámicas, rápidas y escalables.",
+    "hours": "45 horas",
+    "image": "img/javascript_course.jpg"
+  },
+  {
+    "title": "Curso de Python para Principiantes",
+    "description": "Introduce tu camino en la programación aprendiendo Python, uno de los lenguajes más versátiles y utilizados del mundo. Descubrirás la sintaxis básica, estructuras de datos, control de flujo, creación de funciones y manejo de archivos. Terminarás el curso con varios proyectos prácticos que te ayudarán a consolidar tus conocimientos.",
+    "hours": "50 horas",
+    "image": "img/python_course.png"
+  },
+  {
+    "title": "Curso de Ciberseguridad Básica",
+    "description": "Conoce los principios fundamentales de la ciberseguridad y aprende a proteger sistemas, redes y datos frente a amenazas digitales. En este curso estudiarás vulnerabilidades comunes, técnicas de protección, buenas prácticas, seguridad de contraseñas y navegación segura. Perfecto para quienes quieren iniciarse en la seguridad informática.",
+    "hours": "25 horas",
+    "image": "img/ciberseguridad_course.jpg"
+  },
+  {
+    "title": "Curso de Bases de Datos con SQL",
+    "description": "Domina el lenguaje SQL para gestionar y consultar bases de datos de forma profesional. Aprenderás a crear tablas, realizar consultas complejas, utilizar funciones avanzadas, trabajar con relaciones entre datos y optimizar consultas para mejorar el rendimiento. Ideal para desarrolladores, analistas y estudiantes de informática.",
+    "hours": "40 horas",
+    "image": "img/mysql_course.webp"
+  },
+  {
+    "title": "Curso de Desarrollo Web Full Stack",
+    "description": "Conviértete en desarrollador full stack aprendiendo a construir aplicaciones web completas desde el frontend hasta el backend. Diseñarás interfaces modernas, crearás APIs, trabajarás con bases de datos y entenderás cómo conectar todos los componentes de un proyecto real. Un curso completo para quienes buscan dominar todo el proceso de desarrollo web.",
+    "hours": "60 horas",
+    "image": "img/fullsatck_course.png"
+  }
+]
