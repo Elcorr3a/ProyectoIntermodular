@@ -201,7 +201,7 @@ footer h5 {
 }
 
 #CourseTitle {
-  color: #cccccc;
+  color: #facd04;
   text-align: center;
 }
 
@@ -505,8 +505,58 @@ footer h5 {
   font-size: 16px;
   color: #fff;
 }
+
 .clients-cta p {
   font-size: 18px;
   color: #fff;
   margin-bottom: 15px;
+}
+
+.comment-form {
+  max-width: 500px;
+  margin: 60px auto 0;
+  padding: 30px;
+  background: #111;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  text-align: center;
+}
+
+.comment-form h3 {
+  color: #ffd700;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #1c1c1c;
+  border: 1px solid #444;
+  border-radius: 8px;
+  color: white;
+  font-size: 1rem;
+}
+
+.comment-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.comment-form button {
+  width: 100%;
+  padding: 12px;
+  background: #ffd700;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.comment-form button:hover {
+  background: #e6c200;
 }
