@@ -1,0 +1,73 @@
+<link rel="stylesheet" href="Contacto.css">
+
+<div class="container my-5 contacto-container">
+
+    <h2 class="text-center mb-5 contacto-title">Contacto</h2>
+
+    <div class="row justify-content-center">
+
+        <!-- Tarjeta 1 -->
+        <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="card contacto-card text-center p-4">
+                <img src="img/telefono.png" alt="Teléfono" class="card-img-top mx-auto mb-3 contacto-icon">
+                <div class="card-body">
+                    <p class="contacto-text">+34 987 66 21 85</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="card contacto-card text-center p-4">
+                <img src="img/correo-electronico.png" alt="Correo" class="card-img-top mx-auto mb-3 contacto-icon">
+                <div class="card-body">
+                    <p class="contacto-text">CodeAcademy@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="col-md-4 d-flex justify-content-center mb-4">
+            <div class="card contacto-card text-center p-4">
+                <img src="img/campana.png" alt="Campana" class="card-img-top mx-auto mb-3 contacto-icon">
+                <div class="card-body d-flex justify-content-center">
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                        <img src="img/instagram.png" alt="Instagram" class="contacto-social mx-2">
+                    </a>
+                    <a href="https://www.tiktok.com" target="_blank" rel="noopener noreferrer">
+                        <img src="img/tik-tok.png" alt="TikTok" class="contacto-social mx-2">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="text-center mt-4">
+        <p class="contacto-horario">
+            Horario de atención al cliente: <strong>Lunes a viernes de 9:00 a 13:00</strong>, 
+            y <strong>de 16:00 a 19:00 horas</strong>.
+        </p>
+    </div>
+
+    <!-- 🔹 FORMULARIO PARA SOLICITAR PRESUPUESTO -->
+    <div class="text-center mt-5">
+        <h3>Solicitar Presupuesto</h3>
+        <form id="form-presupuesto" class="mx-auto mt-3" style="max-width:500px;">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje:</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Presupuesto</button>
+        </form>
+    </div>
+
+</div>

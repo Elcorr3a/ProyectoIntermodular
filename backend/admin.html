@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="main.css">
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">Panel de Administración</h2>
+
+  <div class="mb-3 text-center">
+    <input type="password" id="admin-password" placeholder="Contraseña de administrador" class="form-control w-50 mx-auto">
+    <button id="admin-login" class="btn btn-primary mt-2">Entrar</button>
+  </div>
+
+  <div id="admin-panel" style="display:none;">
+    <h3>Mensajes recibidos:</h3>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Email</th>
+          <th>Mensaje</th>
+          <th>Fecha</th>
+          <th>Estado</th>
+        </tr>
+      </thead>
+      <tbody id="mensajes-body">
+        <!-- Aquí se llenarán los mensajes -->
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<script type="module" src="../js/admin.js"></script>
